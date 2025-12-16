@@ -95,7 +95,7 @@ async def main(
             number_list, filename_list = get_number_list(number, appoint_number, file_path)
             n_list = number_list[:1] + filename_list
             for each in n_list:
-                real_url = f"{madouqu_url}/?s={each}"
+                real_url = f"{madouqu_url}/video{each}"
                 # real_url = 'https://madouqu.com/?s=XSJ-138.%E5%85%BB%E5%AD%90%E7%9A%84%E7%A7%98%E5%AF%86%E6%95%99%E5%AD%A6EP6'
                 debug_info = f"请求地址: {real_url} "
                 LogBuffer.info().write(web_info + debug_info)
